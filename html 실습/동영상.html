@@ -1,33 +1,80 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <title>동영상 게시판</title>
-        <style>
-           .icon{
-                width: 50px;
-                height: 50px;
-            }
-            body{
-                margin: 0 auto;
-                text-align: center;
-            }
-            img {
-                width: 50%;
-                height: 50%;
-            }
-        </style>
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>동영상 게시판</title>
+    <style>
+      .icon {
+        width: 50px;
+        height: 50px;
+      }
+      body {
+        margin: 0 auto;
+        text-align: center;
+      }
+      .컨테이너 {
+        margin: 0;
+        width: 70%;
+        background-color: white;
 
-</head>
-<body>
-    <h1>동영상 게시판</h1>
-    <img src="../이미지들/lovelyMarley.jpg">
-    <a href="홈페이지게시판.html">
-        <img class="icon " src="../이미지들/healing.jpg">
-    </a>
-    <a href="홈페이지메인.html">
-        <img src="../이미지들/hogam.jpg">
-    </a>
-</body>
+        text-align: center;
+      }
+      video {
+        margin: 0 auto;
+        display: block;
+        width: 50%;
+        border-radius: 10px;
+      }
+
+      img {
+        width: 50%;
+        height: 50%;
+      }
+      a {
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .버튼꾸미기 {
+        display: block;
+        text-align: center;
+      }
+      .댓글 {
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: aliceblue;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="컨테이너">
+      <h1>동영상 게시판</h1>
+      <video>
+        <source src="../비디오들/고독한바다.mp4" type="video/mp4" />
+      </video>
+
+      <div class="댓글들">
+        댓글확인
+        <p>사용자 :</p>
+        <p>멋지네요</p>
+      </div>
+      <br />
+      <div class="댓글">
+        댓글확인
+        <p>사용자 :</p>
+        <p>늠름하네요</p>
+      </div>
+      <br />
+      <div class="버튼꾸미기">
+        <img src="../이미지들/lovelyMarley.jpg" />
+        <a href="홈페이지게시판.html">
+          <img class="icon" src="../이미지들/healing.jpg" />
+        </a>
+        <a href="홈페이지메인.html">
+          <img src="../이미지들/hogam.jpg" />
+        </a>
+      </div>
+    </div>
+  </body>
 </html>
