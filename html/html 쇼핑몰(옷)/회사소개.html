@@ -63,6 +63,7 @@
       .팀클래스 {
         /*가로 중앙 정렬을 위한 스타일 추가*/
         text-align: center;
+        margin-bottom: 50px;
       }
 
       .팀클래스 .멤버 {
@@ -93,6 +94,33 @@
                 .팀클래스 .멤버 3번쨰 멤버
         배경색 light blue
         */
+      }
+
+      /*팀클래스 기준으로
+      h2 또한 자식이기 떄문에 h2 팀소개가 1번째가 됨
+      */
+      .팀클래스 .멤버:nth-child(2) {
+        background-color: rgb(168, 277, 277);
+      }
+
+      .팀클래스 .멤버:nth-child(3) {
+        background-color: lightpink;
+      }
+
+      .팀클래스 .멤버:nth-child(4) {
+        background-color: lightblue;
+      }
+      /*hover : 어디든 맨 뒤에 붙이면 
+      마우스가 태그안에 도착한 다음 나올 스타일
+      모든 숫자에 동일한 디자인을 적용하길 원한다면 n
+      ,
+      */
+      .팀클래스 .멤버:nth-child(n):hover{
+        background-color: darkgreen;
+        color: white;
+        font-weight: bold; /*폰트 굵기 적용*/
+        text-shadow: 0 0 15px white;
+        /*box-shadow: 0 0 15px white; 여기서는 테두리가 없기 떄문에 사용불가*/
       }
     </style>
   </head>
