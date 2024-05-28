@@ -40,8 +40,10 @@
 <script>
     $(document).ready(function(){
         //url 인터넷 주소 이름 나이 아이디 같이 들어와서 사람들한테 회원가입에 대한 결과 보여주기
-                /*
-        file:///C:/Users/user1/frontend-workspace/html 태그작성/30_회원가입 결과보기 gnPw1=
+      /*
+        file:///C:/Users/user1/frontend-workspace/css-html/html/html 태그작성/30_회원가입결과보기.html?signName=홍길동&signAge=40&signId=hong
+       
+        window.location.search = signName=홍길동&signAge=40&signId=hong
         */
         const urlParams = new URLSearchParams(window. location.search);
         const name = urlParams.get('signName');
@@ -49,6 +51,7 @@
 
         const age = urlParams.get('signAne')
         $(("#reultAge").text(age));
+
         const id =urlParams.get('signId')
         $(("#reultId").text(Id));
 
@@ -58,7 +61,7 @@
         //체크박스는 선택이 여러개 모두All
         //사용자가 선택한 체크박스를 모두 가져오기
         const hobbies = urlParams.getAll('singHobby')
-        $("#reultHobby").text(hobbies.join(',')); //join 사용해서 , 로 이어 붙이기reult
+        $("#reultHobby").text(hobbies.join(',')); //join 사용해서 , 로 이어 붙이기 reult
     })
 </script>
 </html>
